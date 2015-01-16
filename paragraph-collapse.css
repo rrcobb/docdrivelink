@@ -1,0 +1,22 @@
+/**
+styling for the paragraphs so that everything looks all peachy
+*/
+
+div .paragraph-indicator{
+  position: absolute;
+  left: -40px;
+  top: 4px;
+  cursor: pointer;
+  -webkit-transition: all .1s ease-in-out; /* For Safari 3.1 to 6.0 */
+    transition: all .1s ease-in-out;
+}
+
+div .rotated-arrow {
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg); 
+  -webkit-transform: rotate(-90deg);
+}
+
+div .hidden {
+  display:none;
+}

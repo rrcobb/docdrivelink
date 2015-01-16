@@ -1,0 +1,16 @@
+{
+  "name": "docs link overlay",
+  "version": "0.1",
+
+  "description": "replaces google docs link with a link for google drive",
+  "permissions": ["tabs", "https://*.google.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.google.com/*"],
+      "js": ["replace.js", /*"paragraph-collapse.js"*/]
+      /*"css": ["paragraph-collapse.css"]*/ // paragraph collapse doesn't really work.
+      //leaving it in the file structure won't hurt too much, and if it ain't in the manifest, it won't mean a thing
+    }
+  ],
+  "manifest_version": 2
+}
